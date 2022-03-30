@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar/Navbar";
 import MyCart from "./pages/MyCart";
 import Footer from "./components/Footer/Footer";
 import shaun from "./4.PNG";
+import wheel from "./5.png";
+import wheel2 from "./6.png";
 
 function App() {
   const products = [
@@ -29,6 +31,20 @@ function App() {
       price: 999,
       quantity: 1,
       img: shaun,
+    },
+    {
+      id: 4,
+      title: "1 Spin",
+      price: 7,
+      quantity: 1,
+      img: wheel,
+    },
+    {
+      id: 5,
+      title: "1 Spin",
+      price: 7,
+      quantity: 1,
+      img: wheel2,
     },
   ];
 
