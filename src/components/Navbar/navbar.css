@@ -92,7 +92,7 @@ a:visited {
 }
 
 .easter1 {
-  color: black;
+  opacity: 0;
 }
 
 input[type="search"]::-webkit-search-decoration,

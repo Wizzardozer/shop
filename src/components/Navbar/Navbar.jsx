@@ -12,7 +12,7 @@ const Navbar = ({ cartItem }) => {
   });
 
   const [play3] = useSound(shaun2, {
-    volume: 0.1,
+    volume: 0.06,
   });
 
   return (
