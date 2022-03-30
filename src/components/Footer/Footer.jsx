@@ -4,9 +4,21 @@ import { FaDiscord, FaTwitter, FaInstagram, FaTwitch } from "react-icons/fa";
 import { GiSheep } from "react-icons/gi";
 import useSound from "use-sound";
 import sus from "../../AMONG US.mp3";
+import n from "../audio/ni.mp3";
+import shaun4 from "../audio/shaun4.mp3";
+import giant from "../audio/Giant.mp3";
 
 const Footer = () => {
   const [play] = useSound(sus, {
+    volume: 0.5,
+  });
+  const [play2] = useSound(n, {
+    volume: 0.5,
+  });
+  const [play3] = useSound(shaun4, {
+    volume: 0.5,
+  });
+  const [play4] = useSound(giant, {
     volume: 0.5,
   });
 
@@ -63,6 +75,18 @@ const Footer = () => {
         <h2>
           <div className="footer-top-contact">Contact</div>
           <GiSheep style={{ cursor: "pointer" }} onClick={play} />
+          <GiSheep
+            style={{ cursor: "pointer", color: "black" }}
+            onClick={play2}
+          />
+          <GiSheep
+            style={{ cursor: "pointer", color: "blue" }}
+            onClick={play3}
+          />
+          <GiSheep
+            style={{ cursor: "pointer", color: "red" }}
+            onClick={play4}
+          />
         </h2>
       </div>
       <div className="footer-bottom">&copy;Stutz</div>
