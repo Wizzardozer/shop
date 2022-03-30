@@ -4,10 +4,15 @@ import lurk from "../../3.png";
 import shaun from "../../baa.mp3";
 import useSound from "use-sound";
 import { Link } from "react-router-dom";
+import shaun2 from "../../shaun2.mp3";
 
 const Navbar = ({ cartItem }) => {
   const [play2] = useSound(shaun, {
     volume: 0.5,
+  });
+
+  const [play3] = useSound(shaun2, {
+    volume: 0.1,
   });
 
   return (
@@ -33,6 +38,9 @@ const Navbar = ({ cartItem }) => {
           <Link to="">
             <li>Contact</li>
           </Link>
+          <li className="easter1" onClick={play3}>
+            h
+          </li>
         </ul>
         {/* Right Nav */}
         <div className="navbar-right">

@@ -1,7 +1,15 @@
 import "./mycart.css";
+import PayPal from "../components/PayPal";
+import { useState } from "react";
 
 const MyCart = ({ cartItem }) => {
   let total = null;
+
+  // const calcTotal = (product) => {
+  //   setTotal((prevTotal) => {
+  //     prevTotal += product.price;
+  //   });
+  // };
 
   return (
     <div className="mycart-container">
@@ -28,6 +36,8 @@ const MyCart = ({ cartItem }) => {
           <div className="mycart-total">
             <div className="mycart-total-header">Total:</div>
             <div>${total} CAD</div>
+            {console.log(total)}
+            {/* <PayPal cartItem={cartItem} total={total} /> */}
           </div>
         ) : (
           <div className="mycart-empty"> Cart is Empty </div>
