@@ -1,0 +1,99 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsla(253, 17%, 4%, 1);
+  color: white;
+  /* position: fixed; */
+  min-width: 100%;
+  font-family: "Roboto";
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  padding: 0px 20px;
+}
+
+.nav-links li:hover {
+  color: gray;
+  transition: all ease 0.3s;
+}
+
+.navbar-image {
+  margin: 0px 20px;
+}
+
+img {
+  width: 50px;
+}
+
+.navbar-form {
+  margin-right: 20px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d1d1d111;
+}
+
+.navbar-form input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  /* border-radius: 10px; */
+}
+
+.navbar-form button {
+  background-color: transparent;
+  color: #ffffffc9;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.shoppingcart {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.shoppingcart-quantity {
+  color: red;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  right: 15px;
+  top: -5px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+a,
+a:visited {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
