@@ -14,7 +14,7 @@ const PayPal = ({ cartItem, total }) => {
                 description: "Cool looking table",
                 amount: {
                   currency_code: "CAD",
-                  value: { total },
+                  value: total,
                 },
               },
             ],

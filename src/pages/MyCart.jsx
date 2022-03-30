@@ -1,15 +1,9 @@
 import "./mycart.css";
 import PayPal from "../components/PayPal";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const MyCart = ({ cartItem }) => {
-  let total = null;
-
-  // const calcTotal = (product) => {
-  //   setTotal((prevTotal) => {
-  //     prevTotal += product.price;
-  //   });
-  // };
+  let total2 = useRef(0);
 
   return (
     <div className="mycart-container">
@@ -21,7 +15,7 @@ const MyCart = ({ cartItem }) => {
         {cartItem.map((product) => (
           <div className="mycart-product-container">
             <div className="mycart-product-calculate">
-              {(total += product.price)}
+              {(total2.current += product.price)}
             </div>
             <div className="mycart-product-image">
               <img src={product.img} alt="card"></img>
@@ -35,12 +29,13 @@ const MyCart = ({ cartItem }) => {
         {cartItem.length > 0 ? (
           <div className="mycart-total">
             <div className="mycart-total-header">Total:</div>
-            <div>${total} CAD</div>
-            {console.log(total)}
-            {/* <PayPal cartItem={cartItem} total={total} /> */}
+            <div>${total2.current} CAD</div>
           </div>
         ) : (
           <div className="mycart-empty"> Cart is Empty </div>
+        )}
+        {cartItem.length > 0 && (
+          <PayPal cartItem={cartItem} total={total2.current} />
         )}
       </div>
     </div>
