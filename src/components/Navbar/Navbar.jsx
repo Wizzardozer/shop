@@ -32,7 +32,7 @@ const Navbar = ({ cartItem }) => {
           <Link to="/">
             <li>Home</li>
           </Link>
-          <Link to="/">
+          <Link to="/Shop">
             <li>Shop</li>
           </Link>
           <Link to="">

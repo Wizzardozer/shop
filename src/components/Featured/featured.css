@@ -1,13 +1,14 @@
 .featured-container {
-  background-color: hsl(235, 15%, 6%);
+  /* background-color: hsl(235, 15%, 6%); */
   margin: 0px 12.5%;
 }
 
 .featured-title {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   color: white;
   font-size: 5rem;
+  margin: 100px 0px;
   /* background-color: red; */
 }
 
@@ -64,6 +65,7 @@ img {
   color: white;
   background-color: hsl(235, 15%, 6%);
   padding: 10px;
+  font-size: 20px;
 }
 
 .product-button:hover {
@@ -74,5 +76,4 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
 }

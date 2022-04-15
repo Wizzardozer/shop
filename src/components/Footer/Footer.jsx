@@ -7,6 +7,7 @@ import sus from "../../AMONG US.mp3";
 import n from "../audio/ni.mp3";
 import shaun4 from "../audio/shaun4.mp3";
 import giant from "../audio/Giant.mp3";
+import no from "../audio/NONO.mp3";
 
 const Footer = () => {
   const [play] = useSound(sus, {
@@ -19,6 +20,10 @@ const Footer = () => {
     volume: 0.5,
   });
   const [play4] = useSound(giant, {
+    volume: 0.5,
+  });
+
+  const [play5] = useSound(no, {
     volume: 0.5,
   });
 
@@ -86,6 +91,10 @@ const Footer = () => {
           <GiSheep
             style={{ cursor: "pointer", color: "red" }}
             onClick={play4}
+          />
+          <GiSheep
+            style={{ cursor: "pointer", color: "purple" }}
+            onClick={play5}
           />
         </h2>
       </div>
